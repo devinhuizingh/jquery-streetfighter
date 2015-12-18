@@ -11,6 +11,7 @@ $
 })
 
 .mousedown(function() {
+	console.log('in mousedown');
 	playHadouken();
     $('.ryu-ready').hide();
     $('.ryu-throwing').show();
@@ -26,11 +27,35 @@ $
 
 })  	
   
-
 .mouseup(function() {
-    $('.ryu-ready').show();
+	console.log('in mouseup');
     $('.ryu-throwing').hide();
+    $('.ryu-ready').show();
+    
       });
+
+
+
+});
+
+$(document).keydown(function(event) {
+	if (event.which === 88) {
+	$('.ryu-still').hide()
+	$('.ryu-cool').show();
+	;
+};
+
+$(document).keydown(function(event) {
+	if (event.which === 88) {
+	$('.ryu-still, .ryu-ready').hide();
+	$('.ryu-cool').show();
+	
+}
+}).keyup(function(event) {
+	if (event.which === 88) {
+	$('.ryu-cool, .ryu-ready').hide();
+	$('.ryu-still').show();
+}});
 
 
 });
