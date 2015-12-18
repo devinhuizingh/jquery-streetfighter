@@ -21,6 +21,7 @@ div {border:1px solid black}
 	float: left;
 	width: 659px;
 	height: 494px;
+  margin-bottom: 1000px;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
