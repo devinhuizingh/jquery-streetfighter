@@ -14,6 +14,8 @@ $(document).ready(function () {
 		console.log('in mousedown');
 		playHadouken();
 	    $('.ryu-ready').hide();
+	    $('.ryu-still').hide();
+	    $('.ryu-cool').hide();
 	    $('.ryu-throwing').show();
 	    $('.hadouken').show()
 	    $('.hadouken').finish().show().animate(
@@ -40,6 +42,8 @@ $(document).ready(function () {
 	$(document).keydown(function(event) {
 		if (event.which === 88) {
 			$('.ryu-still').hide();
+			$('.ryu-ready').hide();
+			$('.ryu-throwing').hide();
 			$('.ryu-cool').show();
 		
 		}
